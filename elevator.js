@@ -116,7 +116,7 @@ export default class Elevator {
   }
 
   checkReturnToLoby() {
-    return !this.riders.length && !this.requests.length && new Date().getHours() < 12
+    return !this.riders.length && new Date().getHours() < 12
   }
 
   returnToLoby() {
